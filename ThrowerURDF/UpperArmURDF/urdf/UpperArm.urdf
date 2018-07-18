@@ -1,0 +1,43 @@
+<robot
+  name="UpperArm">
+  <link
+    name="UpperArm">
+    <inertial>
+      <origin
+        xyz="0.028052 -0.003175 -0.01905"
+        rpy="0 0 0" />
+      <mass
+        value="0.050468" />
+      <inertia
+        ixx="6.10326440955991E-06"
+        ixy="-3.30872245021211E-22"
+        ixz="1.93906147547911E-22"
+        iyy="0.00019098543338738"
+        iyz="-3.19320981329225E-22"
+        izz="0.000185221334576007" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpperArm/meshes/UpperArm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpperArm/meshes/UpperArm.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

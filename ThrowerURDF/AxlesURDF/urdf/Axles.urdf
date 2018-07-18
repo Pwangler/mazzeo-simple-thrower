@@ -1,0 +1,43 @@
+<robot
+  name="Axles">
+  <link
+    name="AxlesURDF">
+    <inertial>
+      <origin
+        xyz="0 4.2594E-20 -2.60804415173552E-36"
+        rpy="0 0 0" />
+      <mass
+        value="0.0052286" />
+      <inertia
+        ixx="2.63537164453715E-08"
+        ixy="-1.62152653436144E-55"
+        ixz="2.64824125613941E-39"
+        iyy="1.18899184029368E-05"
+        iyz="0"
+        izz="1.18899184029368E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AxlesURDF/meshes/AxlesURDF.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AxlesURDF/meshes/AxlesURDF.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

@@ -1,0 +1,43 @@
+<robot
+  name="Forearm">
+  <link
+    name="Forearm">
+    <inertial>
+      <origin
+        xyz="0.017141 -0.003175 0.022163"
+        rpy="0 0 0" />
+      <mass
+        value="0.04507" />
+      <inertia
+        ixx="5.3901857608853E-06"
+        ixy="-3.33251623282519E-24"
+        ixz="1.64028696265159E-21"
+        iyy="0.000138557848645833"
+        iyz="-3.11406641018776E-22"
+        izz="0.000133470551713441" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Forearm/meshes/Forearm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Forearm/meshes/Forearm.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

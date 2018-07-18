@@ -1,0 +1,43 @@
+<robot
+  name="Hand">
+  <link
+    name="HandURDF">
+    <inertial>
+      <origin
+        xyz="-0.015369 -0.003175 0.01206"
+        rpy="0 0 0" />
+      <mass
+        value="0.034401" />
+      <inertia
+        ixx="6.86458956714384E-06"
+        ixy="4.39439700418796E-23"
+        ixz="-4.73196289719905E-22"
+        iyy="4.1365230106014E-05"
+        iyz="-3.6869256590143E-22"
+        izz="3.47318317535175E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HandURDF/meshes/HandURDF.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HandURDF/meshes/HandURDF.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
